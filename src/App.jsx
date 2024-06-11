@@ -3,7 +3,12 @@ import Board from "./components/Board";
 const App = () => {
   return (
     <div>
-      <Board></Board>
+      <div>
+        <Board></Board>
+      </div>
+      <div>
+        
+      </div>
     </div>
   );
 };

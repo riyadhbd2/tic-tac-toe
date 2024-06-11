@@ -33,12 +33,12 @@ const Board = () => {
   if(winner){
     status = `Winner: ${winner}`
   } else{
-    status = "Next Player" + (xIsNext ? "X": "O");
+    status = "Next Player: " + (xIsNext ? "X": "O");
   }
 
 //   Click handler function created here
    const handleClick = (i) => {
-    if (squares[i]) {
+    if (squares[i] || winner) {
       return;
     } else {
       const nextSquares = squares.slice();
